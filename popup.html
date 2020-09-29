@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Skipper DevTools</title>
+    <meta charset="utf-8">
+    <style>
+      body {
+        font-family: sans-serif;
+        -webkit-user-select: none;
+      }
+      h1 { font-weight: normal; text-align: center; cursor: default; }
+      button {
+        width: 150px;
+        height: 60px;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 5px;
+        cursor: pointer;
+        background-color: #e8eef3;
+        color: black;
+        border: 0;
+        font-weight: normal;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+      button:hover, button:active, button:focus {
+        background-color: #42a9ff;
+        color: white;
+      }
+      #element { white-space: pre; font-family: monospace; display: none; }
+    </style>
+  </head>
+  <body>
+    <h1>Skipper DevTools</h1>
+
+    <div style="display: flex;">
+      <button id="button">Download</button>
+      <button id="uploadbutton">Upload</button>
+    </div>
+
+    <div id="element"></div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

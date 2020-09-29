@@ -1,0 +1,26 @@
+{
+  "name": "Skipper DevTools",
+  "version": "1.0",
+  "description": "Import and export debug informations from the page",
+  "manifest_version": 2,
+  "icons": {
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "declarativeContent",
+    "tabs",
+    "downloads",
+    "http://*/",
+    "https://*/"
+  ],
+  "page_action": {
+    "default_popup": "popup.html"
+  }
+}
