@@ -76,7 +76,7 @@ uploadButton.addEventListener('click', async () => {
       localStorage.clear();
       Object.entries(json.storage).forEach(([name, value]) => localStorage.setItem(name, value));
 
-      location.reload();
+      location = json.uri;
     }
 
     fileChooser.addEventListener('change', async (event) => {
